@@ -1,0 +1,54 @@
+header {
+	font-size: 40px;
+	text-align: center;
+}
+
+.container {
+	margin: 0 auto;
+	text-align: center;
+	/*border: lightgrey 3px;*/
+}
+
+table {
+	display: inline-block;
+	position: relative;
+	height: 700px;
+	float: left;
+	/*border: lightgrey 3px;*/
+}
+#board .arrow { 
+	width: 40; 
+	height: 40; 
+	border-left: 31px solid transparent;
+	border-right: 31px solid transparent;
+	border-top: 25px solid #f00;
+}
+
+#board img {
+	width: 60px;
+	height: 60px;
+	vertical-align: middle;
+}
+
+#board .red {
+	background: red;
+}
+
+#board .black {
+	background: black;
+}
+
+#board .cell td {
+	border-radius: 50%;
+	border: 0;
+	background: #bbb;
+	border: white;
+}
+
+#board td img {
+	height: 60px
+	width: 60px;
+	vertical-align: middle;
+	text-align: center;
+
+}
