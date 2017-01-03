@@ -1,21 +1,39 @@
-header {
-	font-size: 40px;
+body {
+	background-image: url(white7.jpg);
+	background-size: cover;
+}
+
+header, h1 {
 	text-align: center;
+	font-family: 'Griffy', sans-serif;
+	letter-spacing: 6px;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+header {
+	font-size: 60px;
 }
 
 .container {
 	margin: 0 auto;
 	text-align: center;
-	/*border: lightgrey 3px;*/
+	position: relative;
 }
 
-table {
-	display: inline-block;
-	position: relative;
-	height: 700px;
-	float: left;
-	/*border: lightgrey 3px;*/
+#msg {
+	text-align: center;
+	display: block;
+	font-size: 20px;
+	width: 600px;
+	padding: 10px;
+	margin: 0 auto;
+	font-family: 'Ribeye', sans-serif;
+	letter-spacing: 2px;
 }
+
 #board .arrow { 
 	width: 40; 
 	height: 40; 
@@ -24,31 +42,38 @@ table {
 	border-top: 25px solid #f00;
 }
 
-#board img {
-	width: 60px;
-	height: 60px;
-	vertical-align: middle;
-}
-
 #board .red {
 	background: red;
+	border-radius: 50%;
+	background: linear-gradient(to bottom, #ff1616 0%,#ad0505 100%);
+
 }
 
 #board .black {
 	background: black;
+	border-radius: 50%;
+	background: linear-gradient(to bottom, #333 0%,#000000 100%);
 }
 
-#board .cell td {
+table {
+	display: inline-block;
+	position: relative;
+}
+
+.cell td {
 	border-radius: 50%;
 	border: 0;
+	height: 60px;
 	background: #bbb;
 	border: white;
 }
 
-#board td img {
-	height: 60px
-	width: 60px;
-	vertical-align: middle;
-	text-align: center;
+.button {
+	position: relative;
+	top: 40px;
+	display: block;
+	margin: 0 auto;
+	font-size: 30px;
+	font-family: 'Griffy', sans-serif;
 
 }

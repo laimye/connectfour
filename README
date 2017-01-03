@@ -1,0 +1,33 @@
+# GRAVITRIPS
+
+## DESCRIPTION
+
+Connect Four (also known as Captain's Mistress, Four Up, Plot Four, Find Four, Fourplay[citation needed], Four in a Row, Four in a Line and Gravitrips (in Soviet Union)) is a two-player game. 
+
+Connect Four is a solved game. The first player can always win by playing the right moves. The game was first solved by James Dow Allen (October 1, 1988), and independently by Victor Allis (October 16, 1988).
+
+The game was first sold under the famous Connect Four trademark by Milton Bradley in February 1974.
+
+
+## TECHNOLOGIES USED
+
+HTML5
+CSS
+Javascript
+jQuery
+
+
+## GETTING STARTED
+
+To play Gravitrips, player should click on one of the arrows in the top row. Players take turns dropping colored discs from the top into a six-column, six-row vertically suspended grid. The pieces fall straight down, occupying the next available space within the column. The objective of the game is to be the first to form a horizontal, vertical, or diagonal line of four of one's own discs.
+
+To play the game, please click here: https://laimye.github.io/connectfour/ 
+
+## NEXT STEPS
+
+Some advanced features are planned to be implemented in the next version (v2) of the game, such as:
+1.	Add sound effects and animation;
+2.	Provide an option for a player to select the size of the board;
+3. Implement responsive css;
+
+Good luck!
