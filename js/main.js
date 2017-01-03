@@ -100,7 +100,8 @@ function checkRow () {
 function checkWinner(col1, row1) {
 	count = 1;
 	var activeColumn, activeRow;
-	var curPlayer = board[0][row1];
+	// check horizontal
+	var curPlayer = board[0][row1]; 
 	for (activeColumn = 1; activeColumn <= 5; activeColumn++) {
 		if (board[activeColumn][row1] == curPlayer && curPlayer != '') {
 			count += 1;
@@ -203,23 +204,26 @@ function checkWinner(col1, row1) {
 		winnerFound = true;
 		document.getElementsByClassName('arrow').disabled = true;
 	}
+
+	checkIfTie();
+
 	return winnerFound;
-	// checkIfTie();
+	
 }
 
 //check if the game is tie
-// function checkIfTie () {
-// if (winnerFound == false) {
-// 	for (var col = 0; col <= 5, col ++) {
-// 		for (var row = 0; row <= 5, row ++) {
-// 			if (board[col][row] === '') {
-// 				return false;
-// 			} else {
-// 				$msg.html("It's a tie!");
-// 			}
-// 		}
-// 	}
-// }
+function checkIfTie () {
+	var col;
+	var tie = true;
+	if (winnerFound == false) {
+		for (col = 0; col <= 5; col ++) {
+			if (board[col][0] == '') {
+				return false;
+			}
+		}
+		if (tie == true) $msg.html("It's a tie!");
+	}
+}
 
 
 //switch player and display whose turn it is. 
